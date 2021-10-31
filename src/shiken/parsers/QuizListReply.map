@@ -1,0 +1,4 @@
+namespace http://www.elric.ru/xsd/shiken {
+    include <shiken/entities/Quiz.h>;
+    Quiz ::shiken::Quiz;
+}

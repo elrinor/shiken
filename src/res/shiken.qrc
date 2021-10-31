@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/" lang="eng" >
+        <file>anchor_ls.png</file>
+        <file>anchor_rs.png</file>
+        <file>test_form_header.ky</file>
+        <file>test_form_header_codepos.txt</file>
+    </qresource>
+</RCC>

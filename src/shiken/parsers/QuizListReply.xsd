@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="unqualified"
+           targetNamespace="http://www.elric.ru/xsd/shiken"
+           xmlns="http://www.elric.ru/xsd/shiken">
+
+    <xs:include schemaLocation="DateTime.xsd"/>
+
+    <xs:complexType name="QuizListReply">
+        <xs:choice>
+            <xs:element name="errorMessage"     type="xs:string"/>
+            <xs:element name="quiz"             type="Quiz" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:choice>
+        <xs:attribute name="quizId"             type="xs:int"/>
+		<xs:anyAttribute processContents="skip"/>
+    </xs:complexType>
+
+    <xs:complexType name="Quiz">
+        <xs:sequence>
+            <xs:element name="discId"           type="xs:int"/>
+            <xs:element name="discStr"          type="xs:string"/>
+            <xs:element name="startTime"        type="DateTime"/>
+            <xs:element name="durationMin"      type="xs:int"/>
+            <xs:element name="submitEndTime"    type="DateTime"/>
+            <xs:element name="title"            type="xs:string"/>
+            <xs:element name="description"      type="xs:string"/>
+            <xs:element name="qsgguid"          type="xs:string"/>
+            <xs:element name="guid"             type="xs:string"/>
+            <xs:any minOccurs="0" processContents="skip"/>
+        </xs:sequence>
+        <xs:attribute name="quizId"             type="xs:int" use="required"/>
+		<xs:anyAttribute processContents="skip"/>
+    </xs:complexType>
+
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="unqualified"
+           targetNamespace="http://www.elric.ru/xsd/shiken"
+           xmlns="http://www.elric.ru/xsd/shiken">
+
+    <xs:complexType name="UserListReply">
+        <xs:choice>
+            <xs:element name="errorMessage"     type="xs:string"/>
+            <xs:element name="user"             type="User" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:choice>
+        <xs:attribute name="guid"               type="xs:string"/>
+        <xs:attribute name="name"               type="xs:string"/>
+        <xs:attribute name="qsgguid"            type="xs:string"/>
+        <xs:attribute name="project"            type="xs:string"/>
+        <xs:attribute name="projname"           type="xs:string"/>
+        <xs:anyAttribute processContents="skip"/>
+    </xs:complexType>
+
+    <xs:complexType name="User">
+        <xs:sequence>
+            <xs:any minOccurs="0" processContents="skip"/>
+        </xs:sequence>
+        <xs:attribute name="login"               type="xs:string" use="required"/>
+        <xs:attribute name="guid"                type="xs:string" use="required"/>
+        <xs:attribute name="variant"             type="xs:int" use="required"/>
+        <xs:anyAttribute processContents="skip"/>
+    </xs:complexType>
+
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+0.1.4
+* Minor refactoring.
+
+0.1.3
++ Now using ImageMagick for image io.
++ ItfCode interface expanded.
+
+0.1.2
+* Now using collage (rotation-scale-translation) model for homography estimation.
+- kpdraw utility removed, --draw option added to kpextract.
+
+0.1.1
+* Prescaling is now handled in a more correct way.
+
+0.1.0
++ Initial release

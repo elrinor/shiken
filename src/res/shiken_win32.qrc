@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/" lang="eng" >
+        <file>gsdll32.dll</file>
+        <file alias="restarter_win32.exe">../../bin/Release/restarter_win32.exe</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="barcode">
+      <UniqueIdentifier>{ef2beafe-4616-4323-b174-8f41e4e31b5f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\barcode\config.h">
+      <Filter>barcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\barcode\DigitImages.h">
+      <Filter>barcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\barcode\ItfCode.h">
+      <Filter>barcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\barcode\ItfEncoding.h">
+      <Filter>barcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\barcode\ItfRecognizer.h">
+      <Filter>barcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\config.h" />
+    <ClInclude Include="..\src\ImageUtils.h" />
+    <ClInclude Include="..\src\barcode\ItfBar.h">
+      <Filter>barcode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\rec2of5.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\rec2of5.pro" />
+  </ItemGroup>
+</Project>

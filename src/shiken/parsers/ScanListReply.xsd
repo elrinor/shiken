@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="unqualified"
+           targetNamespace="http://www.elric.ru/xsd/shiken"
+           xmlns="http://www.elric.ru/xsd/shiken">
+
+    <xs:complexType name="ScanListReply">
+        <xs:choice>
+            <xs:element name="errorMessage"     type="xs:string"/>
+            <xs:element name="scan"             type="Scan" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="Scan">
+        <xs:sequence>
+            <xs:element name="size"             type="xs:long"/>
+            <xs:element name="origName"         type="xs:string"/>
+            <xs:element name="contentType"      type="xs:string"/>
+            <xs:element name="quizId"           type="xs:int"/>
+            <xs:element name="groupId"          type="xs:int"/>
+            <xs:element name="status"           type="xs:string"/>
+            <xs:element name="guidMode"         type="xs:int"/>
+            <xs:element name="clientVersion"    type="xs:int"/>
+            <xs:element name="barcode"          type="xs:string"/>
+            <xs:element name="hashcode"         type="xs:string"/>
+            <xs:element name="message"          type="xs:string"/>
+            <xs:element name="pageStamp"        type="xs:string"/>
+            <xs:element name="sha1"             type="xs:string"/>
+            <xs:element name="version"          type="xs:int"/>
+            <xs:element name="dpi"              type="xs:int"/>
+            <xs:element name="width"            type="xs:int"/>
+            <xs:element name="height"           type="xs:int"/>
+            <xs:element name="viewportX"        type="xs:int"/>
+            <xs:element name="viewportY"        type="xs:int"/>
+            <xs:element name="viewportW"        type="xs:int"/>
+            <xs:element name="viewportH"        type="xs:int"/>
+            <xs:element name="userId"           type="xs:int"/>
+            <xs:any minOccurs="0" processContents="skip"/>
+        </xs:sequence>
+        <xs:attribute name="scanId"             type="xs:int" use="required"/>
+		<xs:anyAttribute processContents="skip"/>
+    </xs:complexType>
+
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

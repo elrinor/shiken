@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML Schema for scanrec utility output. -->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="scanrec-result">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="code" type="xs:string" />
+        <xs:element name="width" type="xs:integer" />
+        <xs:element name="height" type="xs:integer" />
+        <xs:element name="scale" type="xs:double" />
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

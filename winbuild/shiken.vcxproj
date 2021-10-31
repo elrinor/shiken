@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shiken\shiken\actors\FormGeneratorBase.h" />
+    <ClInclude Include="shiken\shiken\actors\FormPrinter.h" />
+    <ClInclude Include="shiken\shiken\actors\GsPrinter.h" />
+    <ClInclude Include="shiken\shiken\actors\QuizListGetter.h" />
+    <ClInclude Include="shiken\shiken\actors\ScanListGetter.h" />
+    <ClInclude Include="shiken\shiken\actors\ScanRecognizer.h" />
+    <ClInclude Include="shiken\shiken\actors\ScanUploader.h" />
+    <ClInclude Include="shiken\shiken\actors\TestFormGenerator.h" />
+    <ClInclude Include="shiken\shiken\actors\UpdateDownloader.h" />
+    <ClInclude Include="shiken\shiken\actors\UserListGetter.h" />
+    <ClInclude Include="shiken\shiken\actors\VersionGetter.h" />
+    <ClInclude Include="shiken\shiken\actors\Worker.h" />
+    <ClInclude Include="shiken\shiken\actors\WorkerRunner.h" />
+    <ClInclude Include="shiken\shiken\config.h" />
+    <ClInclude Include="shiken\shiken\dao\Dao.h" />
+    <ClInclude Include="shiken\shiken\dao\DataAccessDriver.h" />
+    <ClInclude Include="shiken\shiken\dao\PageDao.h" />
+    <ClInclude Include="shiken\shiken\dao\QuizDao.h" />
+    <ClInclude Include="shiken\shiken\dao\ScanDao.h" />
+    <ClInclude Include="shiken\shiken\dao\SettingsDao.h" />
+    <ClInclude Include="shiken\shiken\dao\UserDao.h" />
+    <ClInclude Include="shiken\shiken\entities\Page.h" />
+    <ClInclude Include="shiken\shiken\entities\Quiz.h" />
+    <ClInclude Include="shiken\shiken\entities\Scan.h" />
+    <ClInclude Include="shiken\shiken\entities\ScanData.h" />
+    <ClInclude Include="shiken\shiken\entities\User.h" />
+    <ClInclude Include="shiken\shiken\entities\UsersReply.h" />
+    <ClInclude Include="shiken\shiken\network\ConnectionInfo.h" />
+    <ClInclude Include="shiken\shiken\network\ConnectionManager.h" />
+    <ClInclude Include="shiken\shiken\network\ConnectionTester.h" />
+    <ClInclude Include="shiken\shiken\network\PostData.h" />
+    <ClInclude Include="shiken\shiken\network\ProxyAuthenticationRequester.h" />
+    <ClInclude Include="shiken\shiken\network\ProxyDescription.h" />
+    <ClInclude Include="shiken\shiken\parsers\DateTimeParser.h" />
+    <ClInclude Include="shiken\shiken\parsers\NamespaceOverrideParser.h" />
+    <ClInclude Include="shiken\shiken\parsers\QuizListReplyParser.h" />
+    <ClInclude Include="shiken\shiken\parsers\ScanListReplyParser.h" />
+    <ClInclude Include="shiken\shiken\Shiken.h" />
+    <ClInclude Include="shiken\shiken\ui\ChooseQuizDialog.h" />
+    <ClInclude Include="shiken\shiken\ui\ImageDialog.h" />
+    <ClInclude Include="shiken\shiken\ui\LoginDialog.h" />
+    <ClInclude Include="shiken\shiken\ui\LoginWidget.h" />
+    <ClInclude Include="shiken\shiken\ui\MainWidget.h" />
+    <ClInclude Include="shiken\shiken\ui\PrintConditionsDialog.h" />
+    <ClInclude Include="shiken\shiken\ui\PrintWarningDialog.h" />
+    <ClInclude Include="shiken\shiken\ui\ProxySettingsDialog.h" />
+    <ClInclude Include="shiken\shiken\ui\QuizWidget.h" />
+    <ClInclude Include="shiken\shiken\ui\StartDialog.h" />
+    <ClInclude Include="shiken\shiken\utility\BarcodeProcessor.h" />
+    <ClInclude Include="shiken\shiken\utility\GuidCompressor.h" />
+    <ClInclude Include="shiken\shiken\utility\Log.h" />
+    <ClInclude Include="shiken\shiken\utility\SqlQueryModel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="shiken\shiken\actors\GsPrinter.cpp" />
+    <ClCompile Include="shiken\shiken\actors\QuizListGetter.cpp" />
+    <ClCompile Include="shiken\shiken\actors\ScanListGetter.cpp" />
+    <ClCompile Include="shiken\shiken\actors\ScanRecognizer.cpp" />
+    <ClCompile Include="shiken\shiken\actors\ScanUploader.cpp" />
+    <ClCompile Include="shiken\shiken\actors\TestFormGenerator.cpp" />
+    <ClCompile Include="shiken\shiken\actors\UpdateDownloader.cpp" />
+    <ClCompile Include="shiken\shiken\actors\UserListGetter.cpp" />
+    <ClCompile Include="shiken\shiken\actors\VersionGetter.cpp" />
+    <ClCompile Include="shiken\shiken\actors\Worker.cpp" />
+    <ClCompile Include="shiken\shiken\actors\WorkerRunner.cpp" />
+    <ClCompile Include="shiken\shiken\dao\DataAccessDriver.cpp" />
+    <ClCompile Include="shiken\shiken\dao\PageDao.cpp" />
+    <ClCompile Include="shiken\shiken\dao\QuizDao.cpp" />
+    <ClCompile Include="shiken\shiken\dao\ScanDao.cpp" />
+    <ClCompile Include="shiken\shiken\dao\SettingsDao.cpp" />
+    <ClCompile Include="shiken\shiken\dao\UserDao.cpp" />
+    <ClCompile Include="shiken\shiken\network\ConnectionManager.cpp" />
+    <ClCompile Include="shiken\shiken\network\ConnectionTester.cpp" />
+    <ClCompile Include="shiken\shiken\Shiken.cpp" />
+    <ClCompile Include="shiken\shiken\ui\ChooseQuizDialog.cpp" />
+    <ClCompile Include="shiken\shiken\ui\ImageDialog.cpp" />
+    <ClCompile Include="shiken\shiken\ui\LoginDialog.cpp" />
+    <ClCompile Include="shiken\shiken\ui\LoginWidget.cpp" />
+    <ClCompile Include="shiken\shiken\ui\MainWidget.cpp" />
+    <ClCompile Include="shiken\shiken\ui\PrintConditionsDialog.cpp" />
+    <ClCompile Include="shiken\shiken\ui\PrintWarningDialog.cpp" />
+    <ClCompile Include="shiken\shiken\ui\ProxySettingsDialog.cpp" />
+    <ClCompile Include="shiken\shiken\ui\QuizWidget.cpp" />
+    <ClCompile Include="shiken\shiken\ui\StartDialog.cpp" />
+    <ClCompile Include="shiken\shiken\utility\Log.cpp" />
+    <ClCompile Include="shiken\shiken\utility\SqlQueryModel.cpp" />
+    <ClCompile Include="shiken\shiken_main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="shiken\shiken\parsers\DateTime.xsd" />
+    <Xsd Include="shiken\shiken\parsers\QuizListReply.xsd" />
+    <Xsd Include="shiken\shiken\parsers\ScanListReply.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shiken\shiken\parsers\DateTime.map" />
+    <None Include="shiken\shiken\parsers\QuizListReply.map" />
+    <None Include="shiken\shiken\parsers\ScanListReply.map" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A44211C9-95F3-4622-A979-7963AAA54957}</ProjectGuid>
+    <RootNamespace>shiken</RootNamespace>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\$(Configuration)\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd ..
+qmake -o $(ProjectName).mak $(ProjectName).pro
+jom debug -f $(ProjectName).mak</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd ..
+qmake -o $(ProjectName).mak $(ProjectName).pro
+jom debug-clean -f $(ProjectName).mak
+jom debug -f $(ProjectName).mak</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd ..
+qmake -o $(ProjectName).mak $(ProjectName).pro
+jom debug-clean -f $(ProjectName).mak</NMakeCleanCommandLine>
+    <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../bin/debug/generator.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <NMakeForcedUsingAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\$(Configuration)\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd ..
+qmake -o $(ProjectName).mak $(ProjectName).pro
+jom release -f $(ProjectName).mak</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd ..
+qmake -o $(ProjectName).mak $(ProjectName).pro
+jom release-clean -f $(ProjectName).mak
+jom release -f $(ProjectName).mak</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd ..
+qmake -o $(ProjectName).mak $(ProjectName).pro
+jom release-clean -f $(ProjectName).mak</NMakeCleanCommandLine>
+    <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../bin/release/generator.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <NMakeForcedUsingAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">d:\Projects\Sandbox\CPP\_libz\zlib\include;../bin/temp/moc;../bin/temp/ui;../3rdparty/xsde/libxsde;../3rdparty/ghostscript;../3rdparty/arxlib/include;../3rdparty/acvlib/include;../src;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">d:\Projects\Sandbox\CPP\_libz\zlib\include;../bin/temp/moc;../bin/temp/ui;../3rdparty/xsde/libxsde;../3rdparty/ghostscript;../3rdparty/arxlib/include;../3rdparty/acvlib/include;../src;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">d:\Projects\Sandbox\CPP\_libz\zlib\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">d:\Projects\Sandbox\CPP\_libz\zlib\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
